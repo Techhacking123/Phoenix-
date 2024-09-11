@@ -1,0 +1,24 @@
+.navbar-inverse {
+  background-color: #4555FF;
+  border-color: #4555FF;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+  background-color: #F0F0F0;
+  color: #000;
+}
+.dropdown-menu a{
+  background-color: #F0F0F0;
+  color: black;
+}
+.navbar-inverse .navbar-nav>li>a,
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+body{
+  background-image: url(/images/bgimage1.png);
+  background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    background-position: ;
+    bottom:0px;
+}
