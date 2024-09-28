@@ -74,6 +74,16 @@
     font-weight: 400;
     font-style: normal;
 }
-.label{
+
+.webdev{
   text-align: center;
+  background-color: #E5E5E5;
+  width: 270px;
+  border-radius: 20px;
+}
+.webdev img{
+  height: 100px;
+}
+.webdev p{
+  padding: 15px;
 }
