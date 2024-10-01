@@ -74,16 +74,165 @@
     font-weight: 400;
     font-style: normal;
 }
+.intro2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
 
-.webdev{
+.webdev {
   text-align: center;
   background-color: #E5E5E5;
-  width: 270px;
+  width: 100%; /* Make it full width on small screens */
+  max-width: 270px; /* Ensure there's a maximum width */
   border-radius: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
-.webdev img{
+
+.webdev img {
   height: 100px;
 }
-.webdev p{
+
+.webdev p {
   padding: 15px;
+}
+
+.webdev a {
+  background-color: #2783FF;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none; /* Ensure no underline */
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .intro2 {
+    flex-direction: row;
+    justify-content: center; /* Centers the boxes horizontally */
+  }
+
+  .webdev {
+    flex: 1; /* Make all boxes take up equal space */
+    max-width: 300px; /* Adjust width for larger screens */
+    margin: 10px; /* Add spacing between boxes */
+  }
+}
+/* From Uiverse.io by abrahamcalsin */ 
+.card-client {
+  background: #2cb5a0;
+  width: 25rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 10rem;
+  height: 10rem;
+  border: 4px solid #7cdacc;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture img {
+  width: 10rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
 }
