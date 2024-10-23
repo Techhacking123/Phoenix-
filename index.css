@@ -195,7 +195,7 @@
 }
 
 .social-media a svg {
-  width: 1.1rem;
+  width: 1.6rem;
   fill: currentColor;
 }
 
@@ -235,4 +235,70 @@
 .social-media a:hover .tooltip-social {
   opacity: 1;
   transform: translate(-50%, -130%);
+}
+footer {
+  background-color: #5D5D5D;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  color: #FFA500;
+}
+
+.footer-section h4 {
+  color: #FFA500;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media a {
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
